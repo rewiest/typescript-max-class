@@ -59,9 +59,46 @@ console.log(multiply(2, 5));
 var myMultiply;
 myMultiply = multiply;
 console.log(myMultiply(2, 5));
-//objects
+// objects
 var userData = {
     name: 'Max',
     age: 27
 };
 console.log('My name is ' + userData.name);
+// complex object
+var complex = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex1 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+// union types
+var myRealRealAge = 27;
+myRealRealAge = '27';
+// check types
+var finalValue = 30;
+if (typeof finalValue == 'number') {
+    console.log('finalValue is a number');
+}
+// never
+function neverReturns() {
+    throw new Error('An error!');
+}
+// nullable types - "strictNullChecks" must be set to true in tsconfig.json
+var cannotBeNull = 12;
+// cannotBeNull = null;    causes an error
+var canBeNull;
+canBeNull = 12;
+canBeNull = null;
