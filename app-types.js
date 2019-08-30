@@ -102,3 +102,10 @@ var cannotBeNull = 12;
 var canBeNull;
 canBeNull = 12;
 canBeNull = null;
+// type assertion
+var code1 = 123;
+var employeeCode1 = code1;
+console.log(typeof (employeeCode1));
+var code2 = 123;
+var employeeCode2 = code2;
+console.log(typeof (employeeCode2));

@@ -119,3 +119,12 @@ let cannotBeNull = 12;
 let canBeNull: number | null;
 canBeNull = 12;
 canBeNull = null;
+
+// type assertion
+let code1: any = 123; 
+let employeeCode1 = <number>code1; 
+console.log(typeof(employeeCode1));
+
+let code2: any = 123; 
+let employeeCode2 = code2 as number; 
+console.log(typeof(employeeCode2));
